@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{gensymb}
+\usepackage{todonotes}
+\usepackage{booktabs,lipsum,calc}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usepackage[backend=biber,style=ieee]{biblatex}
+\usepackage[top=2cm, bottom=2cm, left=2.75cm, right=2.75cm]{geometry}
+
+\selectlanguage{english}
+
+%\setlength{\textwidth}{440pt}
+%\setlength{\oddsidemargin}{0pt}
+%\setlength{\parindent}{0pt}
+\pagestyle{fancyplain}
+\fancyhf{}
+
+\input{config}
+
+\lhead{\fancyplain{}{\CourseNumber\;–\;\CourseSemester}}
+\rhead{\fancyplain{}{\AuthorString\;\CourseInst}}
+\rfoot{\fancyplain{}{\thepage}}
+
+\addbibresource{references.bib}
+
+\begin{document}
+    { \centering
+    \bfseries
+    \CourseNumber \quad \CourseName \quad \CourseSemester\\
+    \CoursePerson\\[2\baselineskip]
+
+    \Large
+    \Title \\[1\baselineskip]
+    \Author \\
+    \normalfont
+    \small
+    \AuthorMatr \quad \AuthorProgramCode\\
+    \AuthorEmail\\
+    }
+    \vspace{2em}
+
+
+    % Abstract has a seperate environment
+    \begin{abstract}
+    \end{abstract}
+
+    % This is a basic publication layout
+    % Optional: use \begin{multicols}{2} for two column layout
+    \section{Introduction}
+    \section{Methodology}
+    \section{Results}
+    \section{Discussion}
+    \section{Conclusion}
+
+\end{document}
