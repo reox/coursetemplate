@@ -52,16 +52,24 @@
     \vspace{2em}
 
 
-    % Abstract has a seperate environment
+    % Abstract has a separate environment
     \begin{abstract}
+        Write your article. \cite{Hengl_2002} is a good starting point.
     \end{abstract}
 
     % This is a basic publication layout
     % Optional: use \begin{multicols}{2} for two column layout
-    \section{Introduction}
-    \section{Methodology}
-    \section{Results}
-    \section{Discussion}
-    \section{Conclusion}
+    \input{chapters/conclusion}
+    \input{chapters/discussion}
+    \input{chapters/introduction}
+    \input{chapters/method}
+    \input{chapters/results}
+
+    \newpage
+    % A nice way to print the references
+    \begin{multicols}{2}
+        \renewcommand*{\bibfont}{\footnotesize}
+        \printbibliography
+    \end{multicols}
 
 \end{document}
